@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conway Game of Life</title>
+    <style>
+        .cell {
+          width: 4px;
+          height: 4px;
+          border: 1px;
+        }
+        .up {
+          background-color: #00ffff;
+        }
+        .down {
+          background-color: #ff00ff;
+        }
+    </style>
+</head>
+<body>
+    <br>
+    <table id="board" style="border: 1px solid black"></table>
+    <button class='play-button'>Play</button>
+    <button class='below-button'>T=0</button>
+    <button class='just-button'>T=2.269 (Critical Temperature)</button>
+    <button class='above-button'>T=4</button>
+    <br>
+    <div class="slidecontainer">
+      <input type="range" min="0" max="400" value="227" class="slider" id="myRange">
+    </div>
+    <span>Temperature: </span><span id="demo"></h1>
+    <script type="module" src="./app.js"></script>
+    
+</body>
+</html>
